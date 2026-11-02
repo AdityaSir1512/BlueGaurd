@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "BlueGuard",
+    "slug": "blueguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "BlueGuard uses your location to place pollution reports on the marine map.",
+        "NSPhotoLibraryUsageDescription": "BlueGuard uses your photo library to attach pollution evidence."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "READ_MEDIA_IMAGES"]
+    }
+  }
+}

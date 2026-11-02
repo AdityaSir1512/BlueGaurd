@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "import:biodiversity": "node scripts/importBiodiversity.js",
+    "import:eea-historical": "node scripts/importEeaHistorical.js",
+    "admin:promote": "node scripts/promoteAdmin.js",
+    "test": "tsx --test test/**/*.test.ts"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Backend API for BlueGuard marine pollution and biodiversity data",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.18.1",
+    "multer": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-rate-limit": "^5.1.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^24.5.1",
+    "@types/supertest": "^7.2.1",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.2.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.2"
+  }
+}

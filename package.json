@@ -1,0 +1,37 @@
+{
+  "name": "blueguard",
+  "version": "1.0.0",
+  "description": "BlueGuard marine pollution monitoring and biodiversity platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "mobile"
+  ],
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:mobile": "cd mobile && npm run start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:frontend": "cd frontend && npm run preview",
+    "start:backend": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../mobile && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "fullstack",
+    "react",
+    "vite",
+    "nodejs",
+    "mongodb",
+    "typescript",
+    "marine-pollution"
+  ],
+  "author": "",
+  "license": "ISC"
+}
